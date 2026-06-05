@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jhang AI</title>
+<style>
+body{
+font-family:Arial;
+background:#111;
+color:white;
+text-align:center;
+padding:50px;
+}
+input{
+width:60%;
+padding:10px;
+}
+button{
+padding:10px 20px;
+}
+#chat{
+margin-top:20px;
+}
+</style>
+</head>
+<body>
+
+<h1>🤖 Jhang AI</h1>
+
+<input type="text" id="msg" placeholder="اپنا سوال لکھیں">
+<button onclick="send()">Send</button>
+
+<div id="chat"></div>
+
+<script>
+function send(){
+let msg=document.getElementById("msg").value;
+document.getElementById("chat").innerHTML +=
+"<p><b>You:</b> "+msg+"</p>";
+
+document.getElementById("chat").innerHTML +=
+"<p><b>Jhang AI:</b> میں آپ کا سوال سمجھ رہا ہوں...</p>";
+}
+</script>
+
+</body>
+</html>
